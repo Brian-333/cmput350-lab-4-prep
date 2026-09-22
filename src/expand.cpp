@@ -6,7 +6,7 @@
 // e.g., expand(0b1111ull, 3) == 0b001001001001
 uint64_t expand(uint64_t input, uint32_t scale) {
     uint64_t output = 0;
-    for (uint32_t i = 0; i < 64; ++i) {
+    for (uint64_t i = 0; i < 64; ++i) {
         // Mask the input bit
         if (input & (1ULL << i)) {
             // Shift and OR the bit by scale and set
